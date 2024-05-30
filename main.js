@@ -23,7 +23,7 @@ async function scrapeAmazonProduct(product, numPages) {
       products.push({ title, price, rating, photoLink });
     });
 
-    // Show progress animation with color
+    // Show progress zzzz
     const progress = Math.floor((page / numPages) * 100);
     const progressBar = '▌'.repeat(progress) + '▌'.repeat(100 - progress);
     const color = progress >= 50? '\x1b[32m' : '\x1b[33m'; // Green for 50% or more, yellow for less
